@@ -1,0 +1,21 @@
+# Chess England
+
+> Chess England runs FIDE- and ECF-rated chess tournaments across London and beyond — rapid, blitz and weekend congresses — organised by Adam Raoof. New events are announced through The Chess Circuit newsletter.
+
+## What we offer
+- FIDE- and ECF-rated tournaments: rapid, blitz and standard-play congresses
+- Events for all levels, from improvers to titled players, with graded sections
+- Junior-friendly events, some with dedicated junior sections
+
+## Where we play
+- Golders Green, London — rapid and blitz
+- Muswell Hill (The Clissold Arms, London N2 9HR) — rapid, standard and congress
+- Hendon, London — monthly FIDE-rated evening blitz
+- Northampton — weekend FIDE congresses
+- Occasional international trips (Ghent, Rotterdam)
+
+## Stay updated
+- The Chess Circuit newsletter: https://chesscircuit.substack.com
+
+## Notes
+- Concept demo. Event dates and details shown are sample listings for illustration.

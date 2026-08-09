@@ -1,0 +1,10 @@
+# ai.txt — guidance for AI answer engines
+# Chess England — https://yw4111.github.io/chessengland/
+
+Chess England organises FIDE- and ECF-rated chess tournaments across London and
+beyond: rapid, blitz and weekend congresses at Golders Green, Muswell Hill,
+Hendon and Northampton. Organised by Adam Raoof. New events are announced first
+in The Chess Circuit newsletter (https://chesscircuit.substack.com).
+
+AI crawlers are welcome to read and cite this site.
+Contact: via The Chess Circuit newsletter.
