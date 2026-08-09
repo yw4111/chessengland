@@ -6,8 +6,8 @@
 <title>Chess England — FIDE & ECF rated chess tournaments across London</title>
 <meta name="description" content="Find and play FIDE- and ECF-rated chess tournaments across London and beyond — rapid, blitz and weekend congresses at Golders Green, Muswell Hill, Hendon and Northampton. Organised by Adam Raoof." />
 <link rel="canonical" href="https://yw4111.github.io/chessengland/" />
-<meta name="theme-color" content="#e4e6dc" />
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23e4e6dc'/%3E%3Ctext x='16' y='24' font-size='23' text-anchor='middle' fill='%239a2e22' font-family='Georgia,serif'%3E%E2%99%9E%3C/text%3E%3C/svg%3E" />
+<meta name="theme-color" content="#e6e7dd" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23e6e7dd'/%3E%3Ctext x='16' y='24' font-size='23' text-anchor='middle' fill='%239a2e22' font-family='Georgia,serif'%3E%E2%99%9E%3C/text%3E%3C/svg%3E" />
 
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Chess England — rated chess tournaments across London" />
@@ -17,7 +17,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,400;10..48,500;10..48,600;10..48,700;10..48,800&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,500;10..48,600;10..48,700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&display=swap" rel="stylesheet" />
 
 <script type="application/ld+json">
 {
@@ -94,115 +94,122 @@
 
 <style>
   :root{
-    --paper:#E4E6DC; --card:#F6F7F1; --ink:#20211C; --muted:#5E6156;
-    --red:#9A2E22; --red-deep:#7C2419; --rule:#CDCFC2; --inkrule:#20211C;
-    --display:"Bricolage Grotesque", system-ui, -apple-system, "Segoe UI", sans-serif;
-    --sans:system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --paper:#E6E7DD; --card:#F4F5EE; --ink:#1E1F19; --muted:#5C5F54;
+    --red:#98301F; --red-deep:#7A2618; --rule:#CFD1C4; --inkrule:#1E1F19;
+    --serif:"Fraunces", Georgia, "Times New Roman", serif;
+    --grot:"Bricolage Grotesque", system-ui, -apple-system, "Segoe UI", sans-serif;
     --check:repeating-conic-gradient(var(--red) 0 25%, var(--paper) 0 50%) 0 0/10px 10px;
   }
   *{box-sizing:border-box;}
   html{scroll-behavior:smooth;}
-  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);
-    font-size:1.05rem;line-height:1.62;-webkit-font-smoothing:antialiased;}
-  .wrap{width:min(1000px,92vw);margin-inline:auto;}
-  h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.08;margin:0;letter-spacing:-.02em;text-wrap:balance;}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--serif);
+    font-size:1.08rem;line-height:1.6;font-optical-sizing:auto;-webkit-font-smoothing:antialiased;}
+  .wrap{width:min(1010px,92vw);margin-inline:auto;}
+  h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.08;margin:0;letter-spacing:-.005em;text-wrap:balance;}
   a{color:var(--red);}
-  .lbl{font-family:var(--display);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--red);font-weight:700;}
-  .metatext{font-family:var(--display);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:600;}
+  .lbl{font-family:var(--grot);font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--red);font-weight:700;}
+  .metatext{font-family:var(--grot);font-size:.7rem;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);font-weight:600;}
+  .rule-d{border:0;border-top:3px double var(--inkrule);margin:0;}
 
   /* Header */
-  header.site{position:sticky;top:0;z-index:20;background:color-mix(in oklab,var(--paper) 90%,transparent);
+  header.site{position:sticky;top:0;z-index:20;background:color-mix(in oklab,var(--paper) 92%,transparent);
     backdrop-filter:blur(6px);border-bottom:1px solid var(--inkrule);}
-  .site__row{display:flex;align-items:center;gap:1.2rem;padding:.75rem 0;}
-  .brand{font-family:var(--display);font-weight:800;font-size:1.32rem;color:var(--ink);text-decoration:none;
-    margin-right:auto;display:flex;align-items:center;gap:.5rem;letter-spacing:-.02em;}
-  .brand .kn{color:var(--red);font-size:1.15rem;}
+  .site__row{display:flex;align-items:center;gap:1.2rem;padding:.7rem 0;}
+  .brand{font-family:var(--serif);font-weight:600;font-size:1.42rem;color:var(--ink);text-decoration:none;
+    margin-right:auto;display:flex;align-items:center;gap:.5rem;letter-spacing:-.01em;}
+  .brand .kn{color:var(--red);font-size:1.1rem;}
   nav.main{display:flex;gap:1.4rem;}
-  nav.main a{font-family:var(--display);font-size:.82rem;letter-spacing:.02em;font-weight:600;
-    text-decoration:none;color:var(--ink);padding-bottom:2px;border-bottom:2px solid transparent;}
+  nav.main a{font-family:var(--grot);font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;font-weight:600;
+    text-decoration:none;color:var(--ink);padding-bottom:2px;border-bottom:1.5px solid transparent;}
   nav.main a:hover{border-bottom-color:var(--red);color:var(--red);}
-  .subscribe{font-family:var(--display);font-size:.8rem;letter-spacing:.02em;font-weight:700;
-    text-decoration:none;color:#fff;background:var(--red);padding:.5rem 1rem;border-radius:2px;}
+  .subscribe{font-family:var(--grot);font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;font-weight:700;
+    text-decoration:none;color:#fff;background:var(--red);padding:.48rem .95rem;}
   .subscribe:hover{background:var(--red-deep);}
   @media(max-width:720px){ nav.main{display:none;} }
 
-  /* Hero */
-  .hero{padding:clamp(2.6rem,6vw,4.4rem) 0 clamp(1.8rem,4vw,2.6rem);}
-  .hero__kick{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem;padding-bottom:1.1rem;border-bottom:1px solid var(--rule);}
-  .hero h1{font-size:clamp(2.5rem,7.5vw,4.8rem);margin:1.5rem 0 1.2rem;max-width:15ch;font-weight:800;}
-  .hero__cta{display:flex;flex-wrap:wrap;gap:1.4rem;align-items:center;margin:0 0 1.8rem;}
-  .link-arrow{font-family:var(--display);font-size:.86rem;letter-spacing:0;font-weight:700;
+  /* Hero — magazine nameplate */
+  .hero{padding:clamp(2.2rem,5vw,3.6rem) 0 clamp(1.6rem,4vw,2.4rem);}
+  .hero__kick{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem;padding:.5rem 0;}
+  .hero h1{font-size:clamp(2.6rem,7.5vw,5rem);margin:1.3rem 0 1rem;max-width:16ch;font-weight:600;}
+  .hero__cta{display:flex;flex-wrap:wrap;gap:1.5rem;align-items:center;margin:0 0 1.6rem;}
+  .link-arrow{font-family:var(--grot);font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;font-weight:700;
     text-decoration:none;color:var(--ink);border-bottom:2px solid var(--red);padding-bottom:2px;}
   .link-arrow:hover{color:var(--red);}
-  .hero__lead{column-count:2;column-gap:2.4rem;max-width:52rem;}
+  .hero__lead{column-count:2;column-gap:2.4rem;column-rule:1px solid var(--rule);max-width:56rem;}
   @media(max-width:640px){ .hero__lead{column-count:1;} }
-  .hero__lead p{margin:0 0 1rem;color:var(--ink);}
+  .hero__lead p{margin:0 0 1rem;text-align:justify;hyphens:auto;color:var(--ink);}
+  .hero__lead p:first-child::first-letter{font-family:var(--serif);font-weight:600;font-size:3.6rem;line-height:.7;float:left;padding:.06rem .5rem 0 0;color:var(--red);}
 
-  section{padding:clamp(2.2rem,5vw,3.4rem) 0;}
+  section{padding:clamp(2rem,5vw,3.2rem) 0;}
   .sec-top{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;
-    border-bottom:2px solid var(--inkrule);padding-bottom:.6rem;margin-bottom:1.4rem;}
-  .sec-top h2{font-size:clamp(1.55rem,3.4vw,2.2rem);font-weight:700;}
+    border-bottom:2px solid var(--inkrule);padding-bottom:.55rem;margin-bottom:1.4rem;}
+  .sec-top h2{font-size:clamp(1.6rem,3.4vw,2.3rem);}
 
-  /* Fixtures — ruled list */
+  /* Fixtures */
   .fixtures{border-top:1px solid var(--rule);}
-  .fx{display:grid;grid-template-columns:84px 1fr auto;gap:1.2rem;align-items:center;
-    padding:1.1rem .3rem;border-bottom:1px solid var(--rule);transition:background .12s ease;}
+  .fx{display:grid;grid-template-columns:86px 1fr auto;gap:1.2rem;align-items:center;
+    padding:1.05rem .3rem;border-bottom:1px solid var(--rule);transition:background .12s ease;}
   .fx:hover{background:var(--card);}
-  .fx__date{font-family:var(--display);color:var(--red);font-weight:800;font-variant-numeric:tabular-nums;line-height:1;}
-  .fx__date b{display:block;font-size:1.9rem;font-weight:800;}
-  .fx__date span{font-family:var(--display);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600;}
-  .fx__title{font-family:var(--display);font-size:1.32rem;font-weight:700;margin:0 0 .18rem;letter-spacing:-.01em;}
-  .fx__meta{font-size:.86rem;color:var(--muted);}
-  .fx__tags{margin-top:.4rem;display:flex;flex-wrap:wrap;gap:.55rem;}
-  .fx__tags span{font-family:var(--display);font-size:.66rem;letter-spacing:.06em;text-transform:uppercase;font-weight:700;color:var(--red);
-    border:1px solid color-mix(in oklab,var(--red) 35%,transparent);border-radius:2px;padding:.08rem .38rem;}
-  .fx__enter{font-family:var(--display);font-size:.8rem;font-weight:700;text-decoration:none;color:var(--ink);
-    white-space:nowrap;border-bottom:2px solid var(--red);padding-bottom:2px;}
+  .fx__date{font-family:var(--grot);color:var(--red);font-weight:700;font-variant-numeric:tabular-nums;line-height:1;}
+  .fx__date b{display:block;font-size:1.85rem;font-weight:700;}
+  .fx__date span{font-family:var(--grot);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:600;}
+  .fx__title{font-family:var(--serif);font-size:1.34rem;font-weight:600;margin:0 0 .16rem;}
+  .fx__meta{font-family:var(--grot);font-size:.76rem;letter-spacing:.02em;color:var(--muted);}
+  .fx__tags{margin-top:.4rem;display:flex;flex-wrap:wrap;gap:.5rem;}
+  .fx__tags span{font-family:var(--grot);font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;font-weight:700;color:var(--red);}
+  .fx__enter{font-family:var(--grot);font-size:.74rem;letter-spacing:.06em;text-transform:uppercase;font-weight:700;
+    text-decoration:none;color:var(--ink);white-space:nowrap;border-bottom:2px solid var(--red);padding-bottom:2px;}
   .fx__enter:hover{color:var(--red);}
-  @media(max-width:560px){ .fx{grid-template-columns:60px 1fr;} .fx__enter{grid-column:2;justify-self:start;margin-top:.5rem;} .fx__date b{font-size:1.5rem;} }
+  @media(max-width:560px){ .fx{grid-template-columns:58px 1fr;} .fx__enter{grid-column:2;justify-self:start;margin-top:.5rem;} .fx__date b{font-size:1.5rem;} }
 
   /* Venues */
-  .venues{column-count:2;column-gap:2.6rem;}
+  .venues{column-count:2;column-gap:2.6rem;column-rule:1px solid var(--rule);}
   @media(max-width:640px){ .venues{column-count:1;} }
   .venue{break-inside:avoid;padding-bottom:1.1rem;margin-bottom:1.1rem;border-bottom:1px solid var(--rule);}
-  .venue h3{font-size:1.18rem;color:var(--ink);margin-bottom:.25rem;font-weight:700;}
+  .venue h3{font-size:1.2rem;color:var(--ink);margin-bottom:.22rem;font-weight:600;}
   .venue p{margin:0;color:var(--muted);font-size:.98rem;}
 
   /* About */
   .about{display:grid;gap:2rem;align-items:start;}
   @media(min-width:800px){ .about{grid-template-columns:1.5fr 1fr;} }
   .about p{color:var(--ink);}
-  .about p strong{font-weight:700;}
-  .pullquote{border-left:4px solid var(--red);padding:.2rem 0 .2rem 1.3rem;}
-  .pullquote p{font-family:var(--display);font-weight:600;font-size:1.35rem;line-height:1.32;margin:0 0 .7rem;letter-spacing:-.01em;}
-  .pullquote cite{font-family:var(--display);font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-style:normal;font-weight:600;}
+  .pullquote{border-top:3px double var(--inkrule);border-bottom:3px double var(--inkrule);padding:1.3rem 0;}
+  .pullquote p{font-family:var(--serif);font-style:italic;font-weight:500;font-size:1.4rem;line-height:1.36;margin:0 0 .6rem;}
+  .pullquote cite{font-family:var(--grot);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-style:normal;font-weight:600;}
 
   /* FAQ */
   .faq{max-width:46rem;}
   .faq details{border-bottom:1px solid var(--rule);}
-  .faq summary{cursor:pointer;list-style:none;font-family:var(--display);font-weight:700;font-size:1.12rem;
-    padding:.95rem 0;display:flex;justify-content:space-between;gap:1rem;letter-spacing:-.01em;}
+  .faq summary{cursor:pointer;list-style:none;font-family:var(--serif);font-weight:600;font-size:1.16rem;
+    padding:.95rem 0;display:flex;justify-content:space-between;gap:1rem;}
   .faq summary::-webkit-details-marker{display:none;}
-  .faq summary::after{content:"+";color:var(--red);font-weight:700;}
+  .faq summary::after{content:"+";color:var(--red);font-weight:700;font-family:var(--grot);}
   .faq details[open] summary::after{content:"\2013";}
   .faq details p{margin:0 0 1rem;color:var(--muted);}
 
-  /* Newsletter */
-  .news{border:2px solid var(--inkrule);border-radius:3px;display:grid;gap:1.6rem;padding:clamp(1.5rem,4vw,2.4rem);align-items:center;background:var(--card);}
-  @media(min-width:820px){ .news{grid-template-columns:1.05fr 1fr;} }
-  .news h2{font-size:clamp(1.5rem,3vw,2rem);margin:.45rem 0 .6rem;font-weight:800;}
-  .news p{color:var(--muted);margin:0 0 .6rem;}
-  .news__embed{border:1px solid var(--inkrule);border-radius:2px;background:var(--paper);min-height:150px;overflow:hidden;}
-  .news__embed iframe{width:100%;border:0;display:block;}
+  /* The Chess Circuit — latest posts + subscribe */
+  .circuit{display:grid;gap:2.2rem;}
+  @media(min-width:840px){ .circuit{grid-template-columns:1.35fr 1fr;} }
+  .posts{border-top:1px solid var(--rule);}
+  .post{display:block;text-decoration:none;color:inherit;padding:1rem .2rem;border-bottom:1px solid var(--rule);}
+  .post:hover .post__t{color:var(--red);}
+  .post__k{font-family:var(--grot);font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:600;}
+  .post__t{font-family:var(--serif);font-size:1.25rem;font-weight:600;margin:.2rem 0 .2rem;line-height:1.15;}
+  .post__d{color:var(--muted);font-size:.95rem;margin:0;}
+  .subcard{background:var(--card);border:2px solid var(--inkrule);padding:1.4rem;align-self:start;}
+  .subcard h3{font-family:var(--serif);font-size:1.5rem;margin:.3rem 0 .5rem;font-weight:600;}
+  .subcard p{color:var(--muted);font-size:.96rem;margin:0 0 .9rem;}
+  .subcard__embed{border:1px solid var(--inkrule);background:var(--paper);min-height:150px;overflow:hidden;}
+  .subcard__embed iframe{width:100%;border:0;display:block;}
 
   /* Footer */
-  footer.site{border-top:2px solid var(--inkrule);margin-top:1rem;padding:2.2rem 0 2.6rem;}
+  footer.site{border-top:3px double var(--inkrule);margin-top:1.4rem;padding:2rem 0 2.6rem;}
   .foot-check{height:8px;background:var(--check);margin-bottom:1.6rem;}
   .foot-row{display:flex;flex-wrap:wrap;gap:1.2rem 2.6rem;align-items:baseline;}
   .foot-row nav{display:flex;flex-wrap:wrap;gap:1.2rem;margin-left:auto;}
-  .foot-row nav a{font-family:var(--display);font-size:.78rem;letter-spacing:.02em;font-weight:600;text-decoration:none;color:var(--muted);}
+  .foot-row nav a{font-family:var(--grot);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;font-weight:600;text-decoration:none;color:var(--muted);}
   .foot-row nav a:hover{color:var(--red);}
-  .foot-note{margin-top:1.2rem;font-family:var(--display);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);}
+  .foot-note{margin-top:1.1rem;font-family:var(--grot);font-size:.68rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);}
 
   a:focus-visible,summary:focus-visible{outline:2px solid var(--red);outline-offset:3px;}
   @media(prefers-reduced-motion:reduce){ html{scroll-behavior:auto;} .fx{transition:none;} }
@@ -218,25 +225,28 @@
       <a href="#venues">Venues</a>
       <a href="#about">About</a>
       <a href="#faq">FAQ</a>
+      <a href="#circuit">Newsletter</a>
     </nav>
-    <a class="subscribe" href="#newsletter">Subscribe</a>
+    <a class="subscribe" href="#circuit">Subscribe</a>
   </div>
 </header>
 
 <main>
   <section class="hero wrap">
+    <hr class="rule-d" />
     <div class="hero__kick">
       <span class="metatext">The Chess Circuit &middot; Organised by Adam Raoof</span>
       <span class="metatext">Rapid &middot; Blitz &middot; Congress</span>
     </div>
+    <hr class="rule-d" />
     <h1>Find and play proper chess tournaments.</h1>
     <div class="hero__cta">
       <a class="link-arrow" href="#fixtures">See the fixtures &darr;</a>
-      <a class="link-arrow" href="#newsletter">Join the newsletter</a>
+      <a class="link-arrow" href="#circuit">Join the newsletter</a>
     </div>
     <div class="hero__lead">
       <p>Chess England runs FIDE- and ECF-rated tournaments across London and beyond — rapid, blitz and weekend congresses where players of every level get a real game. From the monthly evening blitz in Hendon to the weekend congresses at Northampton, the aim is unchanged: well-run chess, graded sections, and a friendly board.</p>
-      <p>Improvers and titled players alike are welcome, and juniors have a home at most events. Every tournament is announced first in The Chess Circuit — the newsletter that keeps hundreds of players up to date on where to play next.</p>
+      <p>Improvers and titled players alike are welcome, and juniors have a home at most events. Every tournament is announced first in The Chess Circuit — the newsletter that keeps hundreds of players up to date on where to play next. The autumn fixture list follows.</p>
     </div>
   </section>
 
@@ -246,47 +256,26 @@
       <span class="metatext">Autumn 2026 &middot; sample listings</span>
     </div>
     <div class="fixtures">
-
       <div class="fx">
         <div class="fx__date"><b>05</b><span>Sep</span></div>
-        <div>
-          <p class="fx__title">Golders Green FIDE Rapid</p>
-          <p class="fx__meta">Golders Green, London &middot; 6 rounds</p>
-          <div class="fx__tags"><span>FIDE Rapid</span><span>All levels</span></div>
-        </div>
-        <a class="fx__enter" href="#newsletter">Entry &rarr;</a>
+        <div><p class="fx__title">Golders Green FIDE Rapid</p><p class="fx__meta">Golders Green, London &middot; 6 rounds</p><div class="fx__tags"><span>FIDE Rapid</span><span>All levels</span></div></div>
+        <a class="fx__enter" href="#circuit">Entry &rarr;</a>
       </div>
-
       <div class="fx">
         <div class="fx__date"><b>19</b><span>Sep</span></div>
-        <div>
-          <p class="fx__title">Muswell Hill FIDE &amp; ECF Rapid + Congress</p>
-          <p class="fx__meta">The Clissold Arms, London N2 9HR</p>
-          <div class="fx__tags"><span>Rapid</span><span>Standard</span><span>Congress</span></div>
-        </div>
-        <a class="fx__enter" href="#newsletter">Entry &rarr;</a>
+        <div><p class="fx__title">Muswell Hill FIDE &amp; ECF Rapid + Congress</p><p class="fx__meta">The Clissold Arms, London N2 9HR</p><div class="fx__tags"><span>Rapid</span><span>Standard</span><span>Congress</span></div></div>
+        <a class="fx__enter" href="#circuit">Entry &rarr;</a>
       </div>
-
       <div class="fx">
         <div class="fx__date"><b>02</b><span>Oct</span></div>
-        <div>
-          <p class="fx__title">Hendon FIDE Blitz</p>
-          <p class="fx__meta">Hendon, London &middot; Monthly evening</p>
-          <div class="fx__tags"><span>FIDE Blitz</span></div>
-        </div>
-        <a class="fx__enter" href="#newsletter">Entry &rarr;</a>
+        <div><p class="fx__title">Hendon FIDE Blitz</p><p class="fx__meta">Hendon, London &middot; Monthly evening</p><div class="fx__tags"><span>FIDE Blitz</span></div></div>
+        <a class="fx__enter" href="#circuit">Entry &rarr;</a>
       </div>
-
       <div class="fx">
         <div class="fx__date"><b>17</b><span>Oct</span></div>
-        <div>
-          <p class="fx__title">Northampton FIDE Congress</p>
-          <p class="fx__meta">Northampton &middot; Saturday&ndash;Sunday</p>
-          <div class="fx__tags"><span>FIDE Standard</span><span>Weekend</span></div>
-        </div>
-        <a class="fx__enter" href="#newsletter">Entry &rarr;</a>
+        <div><p class="fx__title">Northampton FIDE Congress</p><p class="fx__meta">Northampton &middot; Saturday&ndash;Sunday</p><div class="fx__tags"><span>FIDE Standard</span><span>Weekend</span></div></div>
+        <a class="fx__enter" href="#circuit">Entry &rarr;</a>
       </div>
-
     </div>
   </section>
 
@@ -328,17 +317,37 @@
     </div>
   </section>
 
-  <section id="newsletter" class="wrap">
-    <div class="news">
-      <div>
+  <section id="circuit" class="wrap">
+    <div class="sec-top">
+      <h2>From The Chess Circuit</h2>
+      <span class="metatext">Latest posts &middot; pulled from the newsletter</span>
+    </div>
+    <div class="circuit">
+      <div class="posts">
+        <a class="post" href="https://chesscircuit.substack.com">
+          <span class="post__k">Entries open &middot; 2 days ago</span>
+          <h3 class="post__t">Golders Green FIDE Rapid — September entries now open</h3>
+          <p class="post__d">Six rounds of FIDE-rated rapidplay return to Golders Green, with graded sections for every level.</p>
+        </a>
+        <a class="post" href="https://chesscircuit.substack.com">
+          <span class="post__k">Results &amp; prizes &middot; last week</span>
+          <h3 class="post__t">Muswell Hill Congress — results and prize winners</h3>
+          <p class="post__d">A full weekend of rapid and standard play at The Clissold Arms. Congratulations to the section winners.</p>
+        </a>
+        <a class="post" href="https://chesscircuit.substack.com">
+          <span class="post__k">Calendar &middot; two weeks ago</span>
+          <h3 class="post__t">Autumn calendar — every date, venue and section</h3>
+          <p class="post__d">The full run of London and Northampton fixtures through to the end of the year, in one place.</p>
+        </a>
+      </div>
+      <aside class="subcard">
         <p class="lbl">The Chess Circuit</p>
-        <h2>Never miss a tournament</h2>
-        <p>Adam's newsletter is where every new event, entry and result is announced first. Join hundreds of players and get the next dates straight to your inbox.</p>
-        <p style="font-size:.85rem;">Free to join &middot; unsubscribe any time.</p>
-      </div>
-      <div class="news__embed">
-        <iframe src="https://chesscircuit.substack.com/embed" height="150" title="Subscribe to The Chess Circuit" scrolling="no"></iframe>
-      </div>
+        <h3>Get every tournament first</h3>
+        <p>Adam's newsletter announces every new event, entry and result before anywhere else. Free to join &middot; unsubscribe any time.</p>
+        <div class="subcard__embed">
+          <iframe src="https://chesscircuit.substack.com/embed" height="150" title="Subscribe to The Chess Circuit" scrolling="no"></iframe>
+        </div>
+      </aside>
     </div>
   </section>
 </main>
@@ -348,7 +357,7 @@
     <div class="foot-check" aria-hidden="true"></div>
     <div class="foot-row">
       <div>
-        <a class="brand" href="#top" style="font-size:1.2rem;"><span class="kn">&#9822;</span> Chess England</a>
+        <a class="brand" href="#top" style="font-size:1.25rem;"><span class="kn">&#9822;</span> Chess England</a>
         <p style="margin:.4rem 0 0;color:var(--muted);font-size:.92rem;max-width:24rem;">Rated chess tournaments across London and beyond. Organised by Adam Raoof.</p>
       </div>
       <nav aria-label="Footer">
@@ -359,7 +368,7 @@
         <a href="https://chesscircuit.substack.com">The Chess Circuit &#8599;</a>
       </nav>
     </div>
-    <p class="foot-note">Concept demo &middot; sample listings for illustration &middot; newsletter powered by Substack</p>
+    <p class="foot-note">Concept demo &middot; sample listings for illustration &middot; latest posts &amp; sign-up powered by Substack</p>
   </div>
 </footer>
 
